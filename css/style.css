@@ -1,13 +1,151 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
-@import "product-page.css";
-@import "introduce-page.css";
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 
 body{
-    background-color: #020202;
-    font-family: 'Open Sans' , -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Amaranth;
+    letter-spacing: 1px;
+    font-size: 9px;
+    background-color: #e3ebf7;
+}
+.phone{
+    width: 300px;
+    height: 600px;
+    padding: 50px 30px;
+    background-color: white;
+    border-radius: 40px;
+    margin: 30px;
+    box-shadow: 15px 15px 20px 1px #BCC2CD,
+                inset 0 0 10px #bcc2cd;
 }
 
-.body-column{
-    border-radius: 10px;
+.phone .phone__title{
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
 }
+
+.phone .phone__inputs{
+    margin: 60px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone .phone__inputs .input{
+    padding: 8px 7px;
+    border-radius: 5px;
+    border: 1px solid #f2eded;
+}
+
+.phone .phone__inputs .input::placeholder{
+    opacity: 0.6; 
+    font-size: 10px;
+    font-family: Amaranth;
+}
+
+.phone .phone__inputs .input:first-child{
+    margin-bottom: 20px;
+}
+
+.phone .phone__link{
+    text-align: right;
+}
+
+.phone .link{
+    text-decoration: none; 
+    color: #E2283D;
+}
+
+.phone .phone__checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.checkbox-custom{
+    display: none;
+}
+
+.checkbox-label{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox-custom + .checkbox-label:before{
+    content: "";
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px; height: 10px;
+    padding: 2px; margin-right: 10px;
+}
+
+.checkbox-custom:checked + .checkbox-label:after {
+    content: "";
+    padding: 2px;
+    position: absolute;
+    width: 1px;
+    height: 5px;
+    border: solid red;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    top: 2px; left: 5px;
+}
+
+
+
+.phone .desc{
+    opacity: 0.5;
+}
+
+.phone .button{
+    border-radius: 20px;
+    color: white;
+    background-color: #E2283D;
+    text-align: center;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+.phone .button-desc{
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.phone .buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.phone .buttons .button{
+    width:110px;
+}
+
+.phone .buttons .button:first-child{
+    background-color: #475A95;
+}
+
+.phone .buttons .button:nth-child(2){
+    background-color: #5DA1F2;
+}
+
+.nav{
+    padding : 0 5px;
+}
+
+.nav .nav__column{
+    margin-bottom : 10px;
+}
+
