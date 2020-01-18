@@ -9,146 +9,153 @@ a{
     color: inherit;
 }
 
-h2{
-    font-size: 10px;
-    font-weight: 700;
-    opacity: 0.9;
-}
-
-h4{
-    font-weight: 700;
-}
 body{
-    font-family: Amaranth;
-    letter-spacing: 1px;
-    font-size: 9px;
-    background-color: #e3ebf7;
     display: flex;
     justify-content: center;
-}
-.phone{
-    width: 300px;
-    height: 600px;
-    padding: 15px;
-    background-color: white;
-    border-radius: 40px;
-    margin-top: 50px;
-    box-shadow: 15px 15px 20px 1px #BCC2CD,
-                inset 0 0 10px #bcc2cd;
+    align-items: center;
+    padding: 50px;
+    background-color: #2698F9;
 }
 
-.screen{
+.frame{
     position: relative;
-    padding: 30px 10px 0 10px;
-    background-color: #f9f9f9;
-    border-radius: 30px;
-    height: 100%;
+    width: 315px;
+    height: 680px;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("https://thispersondoesnotexist.com/image");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding:  15px 20px;
 }
 
-.screen__header{
+.status-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.status-bar .timestamp{
+    font-size: 12px;
+}
+
+.status-bar i{
+    font-size: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.5;
+    margin-bottom: 135px;
+}
+
+header .title  {
     font-size: 13px;
     font-weight: 700;
-    opacity: 0.6;
-    margin-bottom: 30px;
 }
 
-.main-title{
+main{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    flex-direction: column;
 }
 
-.main-title h5{
-    color: #ff5959;
-}
-
-.photos{
+main .avatar{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.photos__column{
+.avatar-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.avatar-info .name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2698F9;
+    margin-bottom: 17px;
+}
+
+.avatar-info .location{
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+main .buttons{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
-.photo{
-    position: relative;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-}
-
-.photos__column:first-child{
-    margin-bottom: 5px;
-}
-
-.photo img{
-    width: 120px;
-    height: 75px;
+main .buttons .btn{
+    width: 135px;
+    height: 45px;
     border-radius: 10px;
-}
-
-.photo h3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.subtitle{
-    margin-bottom: 15px;
-}
-
-.select{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
 
+main .buttons .follow-btn{
     background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-
-.select .select__title h5{
-    margin-top: 3px;
     opacity: 0.6;
 }
 
-.select i{
-    color: #ff5959;
+main .buttons .message-btn{
+    color: white;
+    background-color: #2698F9;
 }
 
-.nav{
-    position: absolute;
-    bottom: 0;
-    padding :15px 20px;
-    background-color: white;
+.countings{
+    width: 90%;
+}
+
+.countings-list{
     display: flex;
-    justify-content: space-between;
-    border-radius: 2px 2px 30px 30px;
+    justify-content: space-around;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.countings-list .count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     width: 100%;
-    margin-left :-10px;
-}
-
-.nav i{
-    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    padding: 7px 25px;
     opacity: 0.7;
-    cursor: pointer;
+}
+nav .icon-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 20px;
 }
 
-.nav i:nth-child(2){
-    color :#ff5959;
+nav .nav-bar{
+    width: 110px;
+    height: 2px;
+    background-color: black;
 }
-
-
-
-
 
 
